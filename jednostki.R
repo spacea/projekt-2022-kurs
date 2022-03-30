@@ -654,5 +654,3 @@ cisnienie.psi = function(x){
                    jednostka = c("psi", "atm", "Pa", "hPa", "kPa", "bar", "mmHg", "inHg", "mmWg", "inWg", "kgf/cm^2")))
   print.data.frame(psi)
 }
-
-
