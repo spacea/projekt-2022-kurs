@@ -277,7 +277,7 @@ objetosc.yd3 = function(x){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
-  } elseyd3 = data.frame(nazwa_jednostki = c("jard sześcienny", "mililitr", "centymetr sześcienny", "litr", "metr sześcienny", 
+  } else(yd3 = data.frame(nazwa_jednostki = c("jard sześcienny", "mililitr", "centymetr sześcienny", "litr", "metr sześcienny", 
                                        "cal sześcienny", "stopa sześcienna", "galon (płyn, USA)", "galon (suchy, USA)", 
                                        "galon (UK)", "uncja (USA)", "uncja (UK)", "kwarta (USA)", "kwarta (UK)", 
                                        "pinta (USA)", "pinta (UK)", "baryłka"),

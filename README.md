@@ -1,1 +1,6 @@
-# projekt-2022-kurs
+# Konwerter jednostek (wersja BETA)
+# Autorzy:
+# Adrian Kurs
+# Wojciech Żmidziński
+
+
