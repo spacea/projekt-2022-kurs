@@ -674,7 +674,7 @@ powierzchnia_mm2 = function(x){
     powierzchnia=data.frame(nazwa_jednostki = c("milimetr kwadrotowy", "centymetr kwadratowy", "metr kwadratowy",
                                                 "kilometr kwadratowy", "ar", "stopa kwadratowa", " jard kwadratowy",
                                                 "akr"),
-                            wartość = c(x, x*100, x*1000000, x*1000000000000, x*100000000, x*92903, x*836100, x*4046856422.4),
+                            wartość = c(x, x/100, x/1000000, x/1000000000000, x/100000000, x/92903, x/836100, x/4046856422.4),
                             jednostka = c("mm^2", "cm^2", "m^2", "km^2", "a", "ft^2", "yd^2", "acre"))
   print.data.frame(powierzchnia)
 }
@@ -688,12 +688,12 @@ powierzchnia_cm2 = function(x){
     powierzchnia=data.frame(nazwa_jednostki = c( "centymetr kwadratowy", "milimetr kwadrotowy", "metr kwadratowy",
                                                  "kilometr kwadratowy", "ar", "stopa kwadratowa", " jard kwadratowy",
                                                  "akr"),
-                            wartość = c(x, x/100, x/100*1000000, x/100*1000000000000, x/100*100000000, x/100*92903,
-                                        x/100*836100, x/100*4046856422.4),
+                            wartość = c(x, x*100, x*0.0001, x*1e-6, x*1e-10, x*0.001076391041671,
+                                        x*0.00011959900463, x*2.471053814672e-8),
                             jednostka = c("cm^2", "mm^2", "m^2", "km^2", "a", "ft^2", "yd^2", "acre"))
   print.data.frame(powierzchnia)
 }
-
+powierzchnia_cm2(1)
 powierzchnia_m2 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
@@ -1012,7 +1012,7 @@ predkosc_kn= function(x){
                                             "kilometry na minutę","kilometry na godzinę", "stopy na sekundę",
                                             "mile na godzinę", " machy"),
                         wartość = c(x, x/1.9438461717893, x/1.9438461717893*60, x/1.9438461717893*0.001, x/1.9438461717893*0.06,
-                                    x/1.9438461717893*3.6, x/1.9438461717893*3.2808398950131, 
+                                    x*1.852, x/1.9438461717893*3.2808398950131, 
                                     x/1.9438461717893*2.2369362920544, x/1.9438461717893*0.002938669957977),
                         jednostka = c( "kn", "m/s", "m/min", "km/s", "km/min", "km/h", "ft/s", "mph", "Mach"))
     print.data.frame(prędkość)
@@ -1032,8 +1032,8 @@ dlugosc_mm= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c("milimetr", "centrymetr", "decymetr", "metr", "kilometr",
                                            "cal", "stopa", "jard", "mila", "mila morska", "lata swietlne"),
-                       wartość = c(x, x*10, x*100, x*1000, x*1000000, x*25.4, x*304.8, x*914.4,
-                                   x*1609344, x*1853184, x*9460528405000020000),
+                       wartość = c(x, x/10, x/100, x/1000, x/1000000, x*0.03937007874016, x*0.00328083989501, x*0.00109361329834,
+                                   x*6.213711922373e-7, x*5.399568034557e-7, x*1.05702341052e-19),
                        jednostka = c("mm", "cm", "dm", "m", "km", "in", "ft", "yd", "mi", "nmi", "ly"))
     print.data.frame(długość)
     
@@ -1048,8 +1048,8 @@ dlugosc_cm= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c("centrymetr", "milimetr","decymetr", "metr",
                                            "kilometr", "cal", "stopa", "jard", "mila", "mila morska", "lata swietlne"),
-                       wartość = c(x, x/10, x/10*100, x/10*1000, x/10*1000000, x/10*25.4, x/10*304.8,
-                                   x/10*914.4, x/10*1609344, x/10, x/10*9460528405000020000),
+                       wartość = c(x, x*10, x*10/100, x*10/1000, x*10/1000000, x*0.39370078740157, x*0.032808398950131,
+                                   x*0.0109361329838, x*6.213711922373e-6, x*5.399568034557e-6, x*1.05702341052e-18),
                        jednostka = c("cm", "mm",  "dm", "m", "km", "in", "ft", "yd", "mi", "nmi", "ly"))
     print.data.frame(długość)
     
@@ -1064,8 +1064,8 @@ dlugosc_dm= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c("decymetr", "milimetr", "centrymetr", "metr",
                                            "kilometr", "cal", "stopa", "jard", "mila", "mila morska", "lata swietlne"),
-                       wartość = c(x, x/100, x/100*10, x/100*1000, x/100*1000000, x/100*25.4, x/100*304.8, x/100*914.4, 
-                                   x/100*1609344, x/100*1853184, x/100*9460528405000020000),
+                       wartość = c(x, x*100, x*100/10, x*100/1000, x*100/1000000, x*3.93700787401575, x*0.32808398950131, x*0.10936132983371, 
+                                   x*6.213711922373e-5, x*5.399568034557e-5, x*1.05702341052e-17),
                        jednostka = c( "dm", "mm", "cm", "m", "km", "in", "ft", "yd", "mi", "nmi", "ly"))
     print.data.frame(długość)
     
@@ -1079,8 +1079,8 @@ dlugosc_m= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c("metr", "milimetr", "centrymetr", "decymetr",
                                            "kilometr", "cal", "stopa", "jard", "mila", "mila morska", "lata swietlne"),
-                       wartość = c(x, x/1000, x/1000*10, x/1000*100, x/1000*1000000, x/1000*25.4, x/1000*304.8, x/1000*914.4,
-                                   x/1000*1609344, x/1000*1853184, x/1000*9460528405000020000),
+                       wartość = c(x, x*1000, x*1000/10, x*1000/100, x*1000/1000000, x*1000/25.4, x*1000/304.8, x*1000/914.4,
+                                   x*0.00062137119223733, x*0.00053995680345572, x*1.05702341052e-16),
                        jednostka = c("m", "mm", "cm", "dm", "km", "in", "ft", "yd", "mi", "nmi", "ly"))
     print.data.frame(długość)
     
@@ -1094,8 +1094,8 @@ dlugosc_km= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c("kilometr", "milimetr", "centrymetr", "decymetr", "metr",
                                            "cal", "stopa", "jard", "mila", "mila morska", "lata swietlne"),
-                       wartość = c(x, x/1000000, x/1000000*10, x/1000000*100, x/1000000*1000, x/1000000*25.4, 
-                                   x/1000000*304.8, x/1000000*914.4, x/1000000*1609344, x/1000000*1853184, x/1000000*9460528405000020000),
+                       wartość = c(x, x*1000000, x*100000, x*10000, x*1000, x*1000000/25.4, 
+                                   x*1000000/304.8, x*1000000/914.4, x*0.62137119223733, x*0.53995680345572, x*1.05702341052e-13),
                        jednostka = c( "km", "mm", "cm", "dm", "m", "in", "ft", "yd", "mi", "nmi", "ly"))
     print.data.frame(długość)
     
@@ -1109,8 +1109,8 @@ dlugosc_in= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c("cal", "milimetr", "centrymetr", "decymetr", "metr",
                                            "kilometr", "stopa", "jard", "mila", "mila morska", "lata swietlne"),
-                       wartość = c(x, x/25.4, x/25.4*10, x/25.4*100, x/25.4*1000, x/25.4*1000000, x/25.4*304.8, x/25.4*914.4,
-                                   x/25.4*1609344, x/25.4*1853184, x/25.4*9460528405000020000),
+                       wartość = c(x, x*25.4, x*25.4/10, x*25.4/100, x*25.4/1000, x*25.4/1000000, x*0.0833333333333, x*0.02777777777778,
+                                   x*1.57828282828283e-5, x*1.371490280778e-5, x*2.68483946273e-5),
                        jednostka = c( "in", "mm", "cm", "dm", "m", "km", "ft", "yd", "mi", "nmi", "ly"))
     print.data.frame(długość)
     
@@ -1124,8 +1124,8 @@ dlugosc_ft= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c( "stopa", "milimetr", "centrymetr", "decymetr", "metr",
                                             "kilometr", "cal", "jard", "mila", "mila morska", "lata swietlne"),
-                       wartość = c(x, x/304.8, x/304.8*10, x/304.8*100, x/304.8*1000, x/304.8*1000000, x/304.8*25.4, x/304.8*914.4,
-                                   x/304.8*1609344, x/304.8*1853184, x/304.8*946052840500002000),
+                       wartość = c(x, x*304.8, x*304.8/10, x*304.8/100, x*304.8/1000, x*304.8/1000000, x*12, x*0.3333333333333,
+                                   x*0.00018939393939, x*0.00016457883369, x*3.22180735527e-17),
                        jednostka = c( "ft", "mm", "cm", "dm", "m", "km", "in", "yd", "mi", "nmi", "ly"))
     print.data.frame(długość)
     
@@ -1139,8 +1139,8 @@ dlugosc_yd= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c( "jard", "milimetr", "centrymetr", "decymetr", "metr",
                                             "kilometr", "cal", "stopa", "mila", "mila morska", "lata swietlne"),
-                       wartość = c(x, x/914.4, x/914.4*10, x/914.4*100, x/914.4*1000, x/914.4*1000000, x/914.4*25.4, x/914.4*304.8, 
-                                   x/914.4*1609344, x/914.4*1853184, x/914.4*9460528405000020000),
+                       wartość = c(x, x*914.4, x*914.4/10, x*914.4/100, x*914.4/1000, x*914.4/1000000, x*36, x*3, 
+                                   x*0.00056818181818, x*0.00049373650108, x*9.66542206582e-17),
                        jednostka = c("yd", "mm", "cm", "dm", "m", "km", "in", "ft",  "mi", "nmi", "ly"))
     print.data.frame(długość)
     
@@ -1154,9 +1154,9 @@ dlugosc_mila= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c("mila", "milimetr", "centrymetr", "decymetr", "metr",
                                            "kilometr", "cal", "stopa", "jard", "mila morska", "lata swietlne"),
-                       wartość = c(x, x/1609344, x/1609344*10, x/1609344*100, x/1609344*1000, x/1609344*1000000, 
-                                   x/1609344*25.4, x/1609344*304.8, x/1609344*914.4,
-                                   x/1609344*1853184, x/1609344*9460528405000020000),
+                       wartość = c(x, x*1609344, x*1609344/10, x*1609344/100, x*1609344/1000, x*1609344/1000000, 
+                                   x*1609344/25.4, x*1609344/304.8, x*1609344/914.4,
+                                   x*0.86897624190065, x*1609344/9460528405000020000),
                        jednostka = c( "mi", "mm", "cm", "dm", "m", "km", "in", "ft", "yd","nmi", "ly"))
     print.data.frame(długość)
     
@@ -1170,8 +1170,8 @@ dlugosc_nmi= function(x){
   } else
     długość=data.frame(nazwa_jednostki = c( "mila morska", "milimetr", "centrymetr", "decymetr", "metr",
                                             "kilometr", "cal", "stopa", "jard", "mila", "lata swietlne"),
-                       wartość = c(x, x/1853184, x/1853184*10, x/1853184*100, x/1853184*1000, x/1853184*1000000, x/1853184*25.4, 
-                                   x/1853184*304.8, x/1853184*914.4, x/1853184, x/1853184*9460528405000020000),
+                       wartość = c(x, x * 1852000, x * 185200, x * 18520, x * 1852, x * 1.852, x * 72913.3858267717, 
+                                   x * 6076.1154855643, x * 2025.37182852143, x * 1.15077944802354, x * 1.95760735629e-13),
                        jednostka = c( "nmi", "mm", "cm", "dm", "m", "km", "in", "ft", "yd", "mi", "ly"))
     print.data.frame(długość)
     
@@ -1184,9 +1184,9 @@ dlugosc_ly= function(x){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
   } else(długość=data.frame(nazwa_jednostki = c( "lata swietlne", "milimetr", "centrymetr", "decymetr", "metr",
                                             "kilometr", "cal", "stopa", "jard", "mila", "mila morska"),
-                       wartość = c(x, x/9460528405000020000, x/9460528405000020000*10, x/9460528405000020000*100, x/9460528405000020000*1000,
-                                   x/9460528405000020000*1000000, x/9460528405000020000*25.4, x/9460528405000020000*304.8,
-                                   x/9460528405000020000*914.4, x/9460528405000020000*1609344, x/9460528405000020000*1853184),
+                       wartość = c(x, x*9460528405000020000, x*9460528405000020000/10, x*9460528405000020000/100, x*9460528405000020000/1000,
+                                   x*9460528405000020000/1000000, x*9460528405000020000/25.4, x*9460528405000020000/304.8,
+                                   x*9460528405000020000/914.4, x*5878499814210.01, x*5108276676565.88),
                        jednostka = c( "ly", "mm", "cm", "dm", "m", "km", "in", "ft", "yd", "mi", "nmi")))
     print.data.frame(długość)
     
