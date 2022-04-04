@@ -4,7 +4,7 @@ options("scipen"=999)
 # MASA #
 #======#
 
-masa.mg = function(x){
+masa_mg = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -18,7 +18,7 @@ masa.mg = function(x){
   print.data.frame(miligram)
 }
 
-masa.g = function(x){
+masa_g = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -32,7 +32,7 @@ masa.g = function(x){
   print.data.frame(gram)
 }
 
-masa.kg = function(x){
+masa_kg = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -46,7 +46,7 @@ masa.kg = function(x){
   print.data.frame(kilogram)
 }
 
-masa.t = function(x){
+masa_t = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -60,7 +60,7 @@ masa.t = function(x){
   print.data.frame(tona)
 }
 
-masa.gr = function(x){
+masa_gr = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -74,7 +74,7 @@ masa.gr = function(x){
   print.data.frame(gran)
 }
 
-masa.oz = function(x){
+masa_oz = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -88,7 +88,7 @@ masa.oz = function(x){
   print.data.frame(uncja)
 }
 
-masa.lb = function(x){
+masa_lb = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -102,7 +102,7 @@ masa.lb = function(x){
   print.data.frame(funt)
 }
 
-masa.ton_us = function(x){
+masa_ton_us = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -116,7 +116,7 @@ masa.ton_us = function(x){
   print.data.frame(tona_USA)
 }
 
-masa.ton_uk = function(x){
+masa_ton_uk = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -130,7 +130,7 @@ masa.ton_uk = function(x){
   print.data.frame(tona_UK)
 }
 
-masa.ct = function(x){
+masa_ct = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -144,7 +144,7 @@ masa.ct = function(x){
   print.data.frame(karat)
 }
 
-masa.u = function(x){
+masa_u = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -162,7 +162,7 @@ masa.u = function(x){
 # OBJĘTOŚĆ #
 #==========#
 
-objetosc.ml = function(x){
+objetosc_ml = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -181,7 +181,7 @@ objetosc.ml = function(x){
   print.data.frame(mililitr)
 }
 
-objetosc.cm3 = function(x){
+objetosc_cm3 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -200,7 +200,7 @@ objetosc.cm3 = function(x){
   print.data.frame(cm3)
 }
 
-objetosc.L = function(x){
+objetosc_L = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -219,7 +219,7 @@ objetosc.L = function(x){
   print.data.frame(litr)
 }
 
-objetosc.m3 = function(x){
+objetosc_m3 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -238,7 +238,7 @@ objetosc.m3 = function(x){
   print.data.frame(m3)
 }
 
-objetosc.in3 = function(x){
+objetosc_in3 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -257,7 +257,7 @@ objetosc.in3 = function(x){
   print.data.frame(in3)
 }
 
-objetosc.ft3 = function(x){
+objetosc_ft3 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -276,7 +276,7 @@ objetosc.ft3 = function(x){
   print.data.frame(ft3)
 }
 
-objetosc.yd3 = function(x){
+objetosc_yd3 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -295,7 +295,7 @@ objetosc.yd3 = function(x){
   print.data.frame(yd3)
 }
 
-objetosc.galon_us = function(x){
+objetosc_galon_us = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -314,7 +314,7 @@ objetosc.galon_us = function(x){
   print.data.frame(galon_us)
 }
 
-objetosc.galon_dry_us = function(x){
+objetosc_galon_dry_us = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -333,7 +333,7 @@ objetosc.galon_dry_us = function(x){
   print.data.frame(galon_dry)
 }
 
-objetosc.galon_uk = function(x){
+objetosc_galon_uk = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -352,7 +352,7 @@ objetosc.galon_uk = function(x){
   print.data.frame(galon_uk)
 }
 
-objetosc.uncja_us = function(x){
+objetosc_uncja_us = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -371,7 +371,7 @@ objetosc.uncja_us = function(x){
   print.data.frame(uncja_us)
 }
 
-objetosc.uncja_uk = function(x){
+objetosc_uncja_uk = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -390,7 +390,7 @@ objetosc.uncja_uk = function(x){
   print.data.frame(uncja_uk)
 }
 
-objetosc.kwarta_us = function(x){
+objetosc_kwarta_us = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -409,7 +409,7 @@ objetosc.kwarta_us = function(x){
   print.data.frame(kwarta_us)
 }
 
-objetosc.kwarta_uk = function(x){
+objetosc_kwarta_uk = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -428,7 +428,7 @@ objetosc.kwarta_uk = function(x){
   print.data.frame(kwarta_uk)
 }
 
-objetosc.pinta_us = function(x){
+objetosc_pinta_us = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -447,7 +447,7 @@ objetosc.pinta_us = function(x){
   print.data.frame(pinta_us)
 }
 
-objetosc.pinta_uk = function(x){
+objetosc_pinta_uk = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -466,7 +466,7 @@ objetosc.pinta_uk = function(x){
   print.data.frame(pinta_uk)
 }
 
-objetosc.barylka = function(x){
+objetosc_barylka = function(x){
   barylka = data.frame(nazwa_jednostki = c("baryłka", "mililitr", "centymetr sześcienny", "litr", "metr sześcienny", 
                                            "cal sześcienny", "stopa sześcienna", "jard sześcienny", "galon (płyn, USA)", 
                                            "galon (suchy, USA)", "galon (UK)", "uncja (USA)", "uncja (UK)", "kwarta (USA)", 
@@ -485,7 +485,7 @@ objetosc.barylka = function(x){
 # CIŚNIENIE #
 #===========#
 
-cisnienie.atm = function(x){
+cisnienie_atm = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -501,7 +501,7 @@ cisnienie.atm = function(x){
   print.data.frame(atm)
 }
 
-cisnienie.Pa = function(x){
+cisnienie_Pa = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -517,7 +517,7 @@ cisnienie.Pa = function(x){
   print.data.frame(Pa)
 }
 
-cisnienie.hPa = function(x){
+cisnienie_hPa = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -533,7 +533,7 @@ cisnienie.hPa = function(x){
   print.data.frame(hPa)
 }
 
-cisnienie.kPa = function(x){
+cisnienie_kPa = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -549,7 +549,7 @@ cisnienie.kPa = function(x){
   print.data.frame(kPa)
 }
 
-cisnienie.bar = function(x){
+cisnienie_bar = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -565,7 +565,7 @@ cisnienie.bar = function(x){
   print.data.frame(bar)
 }
 
-cisnienie.mmHg = function(x){
+cisnienie_mmHg = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -581,7 +581,7 @@ cisnienie.mmHg = function(x){
   print.data.frame(mmHg)
 }
 
-cisnienie.inHg = function(x){
+cisnienie_inHg = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -597,7 +597,7 @@ cisnienie.inHg = function(x){
   print.data.frame(inHg)
 }
 
-cisnienie.mmWg = function(x){
+cisnienie_mmWg = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -613,7 +613,7 @@ cisnienie.mmWg = function(x){
   print.data.frame(mmWg)
 }
 
-cisnienie.inWg = function(x){
+cisnienie_inWg = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -629,7 +629,7 @@ cisnienie.inWg = function(x){
   print.data.frame(inWg)
 }
 
-cisnienie.kgcm2 = function(x){
+cisnienie_kgcm2 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -645,7 +645,7 @@ cisnienie.kgcm2 = function(x){
   print.data.frame(kgcm2)
 }
 
-cisnienie.psi = function(x){
+cisnienie_psi = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -665,7 +665,7 @@ cisnienie.psi = function(x){
 # POWIERZCHNIA #
 #==============#
   
-powierzchnia.mm2 = function(x){
+powierzchnia_mm2 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -679,7 +679,7 @@ powierzchnia.mm2 = function(x){
   print.data.frame(powierzchnia)
 }
 
-powierzchnia.cm2 = function(x){
+powierzchnia_cm2 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -694,7 +694,7 @@ powierzchnia.cm2 = function(x){
   print.data.frame(powierzchnia)
 }
 
-powierzchnia.m2 = function(x){
+powierzchnia_m2 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -709,7 +709,7 @@ powierzchnia.m2 = function(x){
   print.data.frame(powierzchnia)
 }
 
-powierzchnia.km2 = function(x){
+powierzchnia_km2 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -724,7 +724,7 @@ powierzchnia.km2 = function(x){
   print.data.frame(powierzchnia)
 }
 
-powierzchnia.a = function(x){
+powierzchnia_a = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -739,7 +739,7 @@ powierzchnia.a = function(x){
   print.data.frame(powierzchnia)
 }
 
-powierzchnia.ft2 = function(x){
+powierzchnia_ft2 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -753,7 +753,7 @@ powierzchnia.ft2 = function(x){
   print.data.frame(powierzchnia)
 }
 
-powierzchnia.yd2 = function(x){
+powierzchnia_yd2 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -767,7 +767,7 @@ powierzchnia.yd2 = function(x){
   print.data.frame(powierzchnia)
 }
 
-powierzchnia.acre = function(x){
+powierzchnia_acre = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -787,7 +787,7 @@ powierzchnia.acre = function(x){
 # TEMPERATURA #
 #=============#
 
-temperatura.C= function(x){
+temperatura_C= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -800,7 +800,7 @@ temperatura.C= function(x){
   print.data.frame(temperatury)
 }
 
-temperatura.K= function(x){
+temperatura_K= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -813,7 +813,7 @@ temperatura.K= function(x){
   print.data.frame(temperatury)
 }
 
-temperatura.F= function(x){
+temperatura_F= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -826,7 +826,7 @@ temperatura.F= function(x){
   print.data.frame(temperatury)
 }
 
-temperatura.R= function(x){
+temperatura_R= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -839,7 +839,7 @@ temperatura.R= function(x){
   print.data.frame(temperatury)
 }
 
-temperatura.Re= function(x){
+temperatura_Re= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -852,7 +852,7 @@ temperatura.Re= function(x){
   print.data.frame(temperatury)
 }
 
-temperatura.N= function(x){
+temperatura_N= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -869,7 +869,7 @@ temperatura.N= function(x){
 # PRĘDKOŚĆ #
 #==========#
 
-predkosc.ms= function(x){
+predkosc_ms= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -884,7 +884,7 @@ predkosc.ms= function(x){
     print.data.frame(prędkość)
 }
 
-predkosc.mmin= function(x){
+predkosc_mmin= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -900,7 +900,7 @@ predkosc.mmin= function(x){
 }
 
 
-predkosc.kms= function(x){
+predkosc_kms= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -915,7 +915,7 @@ predkosc.kms= function(x){
     print.data.frame(prędkość)
 }
 
-predkosc.kmmin= function(x){
+predkosc_kmmin= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -931,7 +931,7 @@ predkosc.kmmin= function(x){
     
 }
 
-predkosc.kmh= function(x){
+predkosc_kmh= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -948,7 +948,7 @@ predkosc.kmh= function(x){
     
 }
 
-predkosc.fts= function(x){
+predkosc_fts= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -966,7 +966,7 @@ predkosc.fts= function(x){
     
 }
 
-predkosc.mph= function(x){
+predkosc_mph= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -984,7 +984,7 @@ predkosc.mph= function(x){
     
 }
 
-predkosc.Mach= function(x){
+predkosc_Mach= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1002,7 +1002,7 @@ predkosc.Mach= function(x){
     
 }
 
-predkosc.kn= function(x){
+predkosc_kn= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1024,7 +1024,7 @@ predkosc.kn= function(x){
 # DŁUGOŚĆ #
 #=========#
 
-dlugosc.mm= function(x){
+dlugosc_mm= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1040,7 +1040,7 @@ dlugosc.mm= function(x){
     
 }
 
-dlugosc.cm= function(x){
+dlugosc_cm= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1056,7 +1056,7 @@ dlugosc.cm= function(x){
     
 }
 
-dlugosc.dm= function(x){
+dlugosc_dm= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1071,7 +1071,7 @@ dlugosc.dm= function(x){
     
 }
 
-dlugosc.m= function(x){
+dlugosc_m= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1086,7 +1086,7 @@ dlugosc.m= function(x){
     
 }
 
-dlugosc.km= function(x){
+dlugosc_km= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1101,7 +1101,7 @@ dlugosc.km= function(x){
     
 }
 
-dlugosc.in= function(x){
+dlugosc_in= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1116,7 +1116,7 @@ dlugosc.in= function(x){
     
 }
 
-dlugosc.ft= function(x){
+dlugosc_ft= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1131,7 +1131,7 @@ dlugosc.ft= function(x){
     
 }
 
-dlugosc.yd= function(x){
+dlugosc_yd= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1146,7 +1146,7 @@ dlugosc.yd= function(x){
     
 }
 
-dlugosc.mila= function(x){
+dlugosc_mila= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1162,7 +1162,7 @@ dlugosc.mila= function(x){
     
 }
 
-dlugosc.nmi= function(x){
+dlugosc_nmi= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
@@ -1177,7 +1177,7 @@ dlugosc.nmi= function(x){
     
 }
 
-dlugosc.ly= function(x){
+dlugosc_ly= function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
   } else if(!(all(c(length(x) == 1)))){
