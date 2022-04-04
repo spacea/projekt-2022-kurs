@@ -27,191 +27,191 @@ Skrypt obsługuje takie jednostki jak:
 
 
 
-dlugosc. -> pozwala na wybranie jednostki z zagadnienia "długość"
+dlugosc_ -> pozwala na wybranie jednostki z zagadnienia "długość"
 
-- dlugosc.mm -> przeliczenie z milimetrów
+- dlugosc_mm -> przeliczenie z milimetrów
 
-- dlugosc.cm -> przeliczenie z centymetrów
+- dlugosc_cm -> przeliczenie z centymetrów
 
-- dlugosc.dm -> przeliczenie z decymetrów
+- dlugosc_dm -> przeliczenie z decymetrów
 
-- dlugosc.m -> przeliczenie z metrów
+- dlugosc_m -> przeliczenie z metrów
 
-- dlugosc.km -> przeliczenie z kilometrów
+- dlugosc_km -> przeliczenie z kilometrów
 
-- dlugosc.in -> przeliczenie z cali
+- dlugosc_in -> przeliczenie z cali
 
-- dlugosc.ft -> przeliczenie ze stóp
+- dlugosc_ft -> przeliczenie ze stóp
 
-- dlugosc.yd -> przeliczenie z jardów
+- dlugosc_yd -> przeliczenie z jardów
 
-- dlugosc.mi -> przeliczenie z mil lądowych
+- dlugosc_mi -> przeliczenie z mil lądowych
 
-- dlugosc.nmi -> przeliczenie z mil morskich
+- dlugosc_nmi -> przeliczenie z mil morskich
 
-- dlugosc.ly -> przeliczenie z lat świetlnych
+- dlugosc_ly -> przeliczenie z lat świetlnych
 
 
 ### POWIERZCHNIA ###
 
-powierzchnia. -> pozwala na wybranie jednostki z zagadnienia "powierzchnia"
+powierzchnia_ -> pozwala na wybranie jednostki z zagadnienia "powierzchnia"
 
-- powierzchnia.mm2 -> przeliczenie z milimetrów kwadratowych
+- powierzchnia_mm2 -> przeliczenie z milimetrów kwadratowych
 
-- powierzchnia.cm2 -> przeliczenie z centymetrów kwadratowych
+- powierzchnia_cm2 -> przeliczenie z centymetrów kwadratowych
 
-- powierzchnia.m2 -> przeliczenie z metrów kwadratowych
+- powierzchnia_m2 -> przeliczenie z metrów kwadratowych
 
-- powierzchnia.a -> przeliczenie z arów
+- powierzchnia_a -> przeliczenie z arów
 
-- powierzchnia.ha -> przeliczenie z hektarów
+- powierzchnia_ha -> przeliczenie z hektarów
 
-- powierzchnia.km2 -> przeliczenie z kilometrów kwadratowych
+- powierzchnia_km2 -> przeliczenie z kilometrów kwadratowych
 
-- powierzchnia.ft2 -> przeliczenie ze stóp kwadratowych
+- powierzchnia_ft2 -> przeliczenie ze stóp kwadratowych
 
-- powierzchnia.yd2 -> przeliczenie z jardów kwadratowych
+- powierzchnia_yd2 -> przeliczenie z jardów kwadratowych
 
-- powierzchnia.acre -> przeliczenie z akrów
+- powierzchnia_acre -> przeliczenie z akrów
 
 
 ### MASA ###
 
-masa. -> pozwala na wybranie jednostki z zagadnienia "masa"
+masa_ -> pozwala na wybranie jednostki z zagadnienia "masa"
 
-- masa.mg -> przeliczenie z miligramów
+- masa_mg -> przeliczenie z miligramów
 
-- masa.g -> przeliczenie z gramów
+- masa_g -> przeliczenie z gramów
 
-- masa.kg -> przeliczenie z kilogramów
+- masa_kg -> przeliczenie z kilogramów
 
-- masa.t -> przeliczenie z tony
+- masa_t -> przeliczenie z tony
 
-- masa.gr -> przeliczenie z granów
+- masa_gr -> przeliczenie z granów
 
-- masa.oz -> przeliczenie z uncji
+- masa_oz -> przeliczenie z uncji
 
-- masa.lb -> przeliczenie z funtów
+- masa_lb -> przeliczenie z funtów
 
-- masa.ton_us -> przeliczenie z ton amerykańskich
+- masa_ton_us -> przeliczenie z ton amerykańskich
 
-- masa.ton_uk -> przeliczenie z ton brytyjskich
+- masa_ton_uk -> przeliczenie z ton brytyjskich
 
-- masa.ct -> przeliczenie z karatów
+- masa_ct -> przeliczenie z karatów
 
-- masa.u -> przeliczenie z masy (jednostek) atomowych
+- masa_u -> przeliczenie z masy (jednostek) atomowych
 
 
 ### OBJĘTOŚĆ ###
 
-objetosc. -> pozwala na wybranie jednostki z zagadnienia "objętość"
+objetosc_ -> pozwala na wybranie jednostki z zagadnienia "objętość"
 
-- objetosc.ml -> przeliczenie z mililitrów
+- objetosc_ml -> przeliczenie z mililitrów
 
-- objetosc.cm3 -> przeliczenie z centymetrów sześciennych
+- objetosc_cm3 -> przeliczenie z centymetrów sześciennych
 
-- objetosc.L -> przeliczenie z litrów
+- objetosc_L -> przeliczenie z litrów
 
-- objetosc.m3 -> przeliczenie z metrów sześciennych
+- objetosc_m3 -> przeliczenie z metrów sześciennych
 
-- objetosc.in3 -> przeliczenie z cali sześciennych
+- objetosc_in3 -> przeliczenie z cali sześciennych
 
-- objetosc.ft3 -> przeliczenie ze stóp sześciennych
+- objetosc_ft3 -> przeliczenie ze stóp sześciennych
 
-- objetosc.yd3 -> przeliczenie z jardów sześciennych
+- objetosc_yd3 -> przeliczenie z jardów sześciennych
 
-- objetosc.galon_us -> przeliczenie z galonu płynnego amerykańskiego
+- objetosc_galon_us -> przeliczenie z galonu płynnego amerykańskiego
 
-- objetosc.galon_dry_us -> przeliczenie z galonu suchego amerykańskiego
+- objetosc_galon_dry_us -> przeliczenie z galonu suchego amerykańskiego
 
-- objetosc.galon_uk -> przeliczenie z galonu brytyjskiego
+- objetosc_galon_uk -> przeliczenie z galonu brytyjskiego
 
-- objetosc.uncja_us -> przeliczenie z uncji amerykańskiej
+- objetosc_uncja_us -> przeliczenie z uncji amerykańskiej
 
-- objetosc.uncja_uk -> przeliczenie z uncji brytyjskiej
+- objetosc_uncja_uk -> przeliczenie z uncji brytyjskiej
 
-- objetosc.kwarta_us -> przeliczenie z kwarty amerykańskiej
+- objetosc_kwarta_us -> przeliczenie z kwarty amerykańskiej
 
-- objetosc.kwarta_uk -> przeliczenie z kwarty brytyjskiej
+- objetosc_kwarta_uk -> przeliczenie z kwarty brytyjskiej
 
-- objetosc.pinta_us -> przeliczenie z pinty amerykańskiej
+- objetosc_pinta_us -> przeliczenie z pinty amerykańskiej
 
-- objetosc.pints_uk -> przeliczenie z pinty brytyjskiej
+- objetosc_pints_uk -> przeliczenie z pinty brytyjskiej
 
-- objetosc.barylka -> przeliczenie z baryłek
+- objetosc_barylka -> przeliczenie z baryłek
 
 
 ### PRĘDKOŚĆ ###
 
-predkosc. -> pozwala na wybranie jednostki z zagadnienia "prędkość"
+predkosc_ -> pozwala na wybranie jednostki z zagadnienia "prędkość"
 
-- predkosc.ms -> przeliczenie z metrów na sekundę
+- predkosc_ms -> przeliczenie z metrów na sekundę
 
-- predkosc.mmin -> przeliczenie z metrów na minutę
+- predkosc_mmin -> przeliczenie z metrów na minutę
 
-- predkosc.kms -> przeliczenie z kilometrów na sekundę
+- predkosc_kms -> przeliczenie z kilometrów na sekundę
 
-- predkosc.kmin -> przeliczenie z kilometrów na minutę
+- predkosc_kmin -> przeliczenie z kilometrów na minutę
 
-- predkosc.kmh -> przeliczenie z kilometrów na godzinę
+- predkosc_kmh -> przeliczenie z kilometrów na godzinę
 
-- predkosc.fts -> przeliczenie ze stóp na sekundę
+- predkosc_fts -> przeliczenie ze stóp na sekundę
 
-- predkosc.mph -> przeliczenie z mil na godzinę
+- predkosc_mph -> przeliczenie z mil na godzinę
 
-- predkosc.Mach -> przeliczenie z mach
+- predkosc_Mach -> przeliczenie z mach
 
-- predkosc.kn -> przeliczenie z węzłów
+- predkosc_kn -> przeliczenie z węzłów
 
 
 ### TEMPERATURA ###
 
-temperatura. -> pozwala na wybranie jednostki z zagadnienia "temperatura"
+temperatura_ -> pozwala na wybranie jednostki z zagadnienia "temperatura"
 
-- temperatura.C -> przeliczenie ze skali Celcjusza
+- temperatura_C -> przeliczenie ze skali Celcjusza
 
-- temperatura.K -> przeliczenie ze skali Kelvina
+- temperatura_K -> przeliczenie ze skali Kelvina
 
-- temperatura.F -> przeliczenie ze skali Fahrenheita
+- temperatura_F -> przeliczenie ze skali Fahrenheita
 
-- temperatura.R -> przeliczenie ze skali Rankinea
+- temperatura_R -> przeliczenie ze skali Rankinea
 
-- temperatura.Re -> przeliczenie ze skali Réaumura
+- temperatura_Re -> przeliczenie ze skali Réaumura
 
-- temperatura.N -> przeliczenie ze skali Newtona
+- temperatura_N -> przeliczenie ze skali Newtona
 
 
 ### CIŚNIENIE ###
 
-cisnienie. -> pozwala na wybranie jednostki z zagadnienia "ciśnienie"
+cisnienie_ -> pozwala na wybranie jednostki z zagadnienia "ciśnienie"
 
-- cisnienie.atm -> przeliczenie z atmosfery
+- cisnienie_atm -> przeliczenie z atmosfery
 
-- cisnienie.Pa -> przeliczenie z paskali
+- cisnienie_Pa -> przeliczenie z paskali
 
-- cisnienie.hPa -> przeliczenie z hektopaskali
+- cisnienie_hPa -> przeliczenie z hektopaskali
 
-- cisnienie.kPa -> przeliczenie z kilopaskali
+- cisnienie_kPa -> przeliczenie z kilopaskali
 
-- cisnienie.bar -> przeliczenie z barów
+- cisnienie_bar -> przeliczenie z barów
 
-- cisnienie.mmHg -> przeliczenie z milimetrów słupa rtęci
+- cisnienie_mmHg -> przeliczenie z milimetrów słupa rtęci
 
-- cisnienie.inHg -> przeliczenie z cali słupa rtęci
+- cisnienie_inHg -> przeliczenie z cali słupa rtęci
 
-- cisnienie.mmWg -> przeliczenie z milimetrów słupa wody
+- cisnienie_mmWg -> przeliczenie z milimetrów słupa wody
 
-- cisnienie.inWg -> przeliczenie z cali słupa wody
+- cisnienie_inWg -> przeliczenie z cali słupa wody
 
-- cisnienie.kgcm2 -> przeliczenie z kilogramów na centymetr kwadratowy
+- cisnienie_kgcm2 -> przeliczenie z kilogramów na centymetr kwadratowy
 
-- cisnienie.psi -> przeliczenie z funtów na cal kwadratowy
+- cisnienie_psi -> przeliczenie z funtów na cal kwadratowy
 
 # Przykład
 
-Załóżmy, że interesuje nas wartość ***Mach 3*** na inne wartości prędkości. Użyjmy więc tej funkcji: `predkosc.Mach(3)`
+Załóżmy, że interesuje nas wartość ***Mach 3*** na inne wartości prędkości. Użyjmy więc tej funkcji: `predkosc_Mach(3)`
 ```
-predkosc.Mach(3)
+predkosc_Mach(3)
         nazwa_jednostki     wartość jednostka
 1                 machy     3.00000      Mach
 2      metry na sekundę  1020.87000       m/s
@@ -232,8 +232,8 @@ Zaczniemy od założenia projektu - ostatecznie planujemy, aby ten skrypt zapako
 
 Co do uwag - na chwilę obecną uważamy, że kod może być za długi, lecz nie ma pomysłu jak go skrócić. Następna rzecz to warunki funkcji: otóż po wprowadzeniu drugiego argumentu do funkcji wyświetla się error z nieużywanym argumentem: 
 ```
-> predkosc.Mach(3, 5)
-Error in predkosc.Mach(3, 5) : unused argument (5)
+> predkosc_Mach(3, 5)
+Error in predkosc_Mach(3, 5) : unused argument (5)
 > 
 ```
 Nie wiemy jak ułożyć warunek, aby zmienić komunikat błędu na język polski.
