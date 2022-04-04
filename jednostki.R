@@ -693,7 +693,7 @@ powierzchnia_cm2 = function(x){
                             jednostka = c("cm^2", "mm^2", "m^2", "km^2", "a", "ft^2", "yd^2", "acre"))
   print.data.frame(powierzchnia)
 }
-powierzchnia_cm2(1)
+
 powierzchnia_m2 = function(x){
   if(!(is.numeric(x))){
     stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
