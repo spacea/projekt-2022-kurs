@@ -672,10 +672,10 @@ powierzchnia_mm2 = function(x){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
   } else
     powierzchnia=data.frame(nazwa_jednostki = c("milimetr kwadrotowy", "centymetr kwadratowy", "metr kwadratowy",
-                                                "kilometr kwadratowy", "ar", "stopa kwadratowa", " jard kwadratowy",
+                                                "kilometr kwadratowy", "ar", "hektar", "stopa kwadratowa", " jard kwadratowy",
                                                 "akr"),
-                            wartość = c(x, x/100, x/1000000, x/1000000000000, x/100000000, x/92903, x/836100, x/4046856422.4),
-                            jednostka = c("mm^2", "cm^2", "m^2", "km^2", "a", "ft^2", "yd^2", "acre"))
+                            wartość = c(x, x/100, x/1000000, x/1000000000000, x/100000000, x*1e-10, x/92903, x/836100, x/4046856422.4),
+                            jednostka = c("mm^2", "cm^2", "m^2", "km^2", "a", "ha", "ft^2", "yd^2", "acre"))
   print.data.frame(powierzchnia)
 }
 
@@ -686,11 +686,11 @@ powierzchnia_cm2 = function(x){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
   } else
     powierzchnia=data.frame(nazwa_jednostki = c( "centymetr kwadratowy", "milimetr kwadrotowy", "metr kwadratowy",
-                                                 "kilometr kwadratowy", "ar", "stopa kwadratowa", " jard kwadratowy",
+                                                 "kilometr kwadratowy", "ar", "hektar", "stopa kwadratowa", " jard kwadratowy",
                                                  "akr"),
-                            wartość = c(x, x*100, x*0.0001, x*1e-6, x*1e-10, x*0.001076391041671,
+                            wartość = c(x, x*100, x*0.0001, x*1e-6, x*1e-10, x*1e-8, x*0.001076391041671,
                                         x*0.00011959900463, x*2.471053814672e-8),
-                            jednostka = c("cm^2", "mm^2", "m^2", "km^2", "a", "ft^2", "yd^2", "acre"))
+                            jednostka = c("cm^2", "mm^2", "m^2", "km^2", "a", "ha", "ft^2", "yd^2", "acre"))
   print.data.frame(powierzchnia)
 }
 
@@ -701,11 +701,11 @@ powierzchnia_m2 = function(x){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
   } else
     powierzchnia=data.frame(nazwa_jednostki = c("metr kwadratowy", "milimetr kwadrotowy", "centymetr kwadratowy", 
-                                                "kilometr kwadratowy", "ar", "stopa kwadratowa", " jard kwadratowy",
+                                                "kilometr kwadratowy", "ar", "hektar", "stopa kwadratowa", " jard kwadratowy",
                                                 "akr"),
                             wartość = c(x, x/1000000, x/1000000*100, x/1000000*1000000000000, x/1000000*100000000,
-                                        x/1000000*92903, x/1000000*836100, x/1000000*4046856422.4),
-                            jednostka = c("m^2", "mm^2", "cm^2", "km^2", "a", "ft^2", "yd^2", "acre"))
+                                        x*0.0001, x/1000000*92903, x/1000000*836100, x/1000000*4046856422.4),
+                            jednostka = c("m^2", "mm^2", "cm^2", "km^2", "a", "ha", "ft^2", "yd^2", "acre"))
   print.data.frame(powierzchnia)
 }
 
@@ -716,11 +716,11 @@ powierzchnia_km2 = function(x){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
   } else
     powierzchnia=data.frame(nazwa_jednostki = c("kilometr kwadratowy", "milimetr kwadrotowy", "centymetr kwadratowy",
-                                                "metr kwadratowy", "ar", "stopa kwadratowa", " jard kwadratowy","akr"),
+                                                "metr kwadratowy", "ar", "hektar", "stopa kwadratowa", " jard kwadratowy","akr"),
                             wartość = c(x, x*1000000000000, x*1000000000000*100, x*1000000000000*1000000,
-                                        x*1000000000000*100000000, x*1000000000000*92903,
+                                        x*1000000000000*100000000, x*100, x*1000000000000*92903,
                                         x*1000000000000*836100, x*1000000000000*4046856422.4),
-                            jednostka = c( "km^2", "mm^2", "cm^2", "m^2", "a", "ft^2", "yd^2", "acre"))
+                            jednostka = c( "km^2", "mm^2", "cm^2", "m^2", "a", "ha", "ft^2", "yd^2", "acre"))
   print.data.frame(powierzchnia)
 }
 
@@ -731,11 +731,26 @@ powierzchnia_a = function(x){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
   } else
     powierzchnia=data.frame(nazwa_jednostki = c("ar", "milimetr kwadrotowy", "centymetr kwadratowy", "metr kwadratowy",
-                                                "kilometr kwadratowy", "stopa kwadratowa", " jard kwadratowy",
+                                                "kilometr kwadratowy", "hektar", "stopa kwadratowa", " jard kwadratowy",
                                                 "akr"),
-                            wartość = c(x, x*100000000, x*100000000*100, x*100000000*1000000, x*100000000*1000000000000,
-                                        x*100000000*92903, x*100000000*836100, x*100000000*4046856422.4),
-                            jednostka = c( "a", "mm^2", "cm^2", "m^2", "km^2", "ft^2", "yd^2", "acre"))
+                            wartość = c(x, x*100000000, x*100000000/100, x*100000000/1000000, x*100000000/1000000000000,
+                                        x*0.01, x*100000000/92903, x*100000000/836100, x*100000000/4046856422.4),
+                            jednostka = c( "a", "mm^2", "cm^2", "m^2", "km^2", "ha", "ft^2", "yd^2", "acre"))
+  print.data.frame(powierzchnia)
+}
+
+powierzchnia_ha = function(x){
+  if(!(is.numeric(x))){
+    stop("Argument 'x' musi być typu numerycznego, np. 10, 420, 69420")
+  } else if(!(all(c(length(x) == 1)))){
+    stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
+  } else
+    powierzchnia=data.frame(nazwa_jednostki = c("hektar", "milimetr kwadrotowy", "centymetr kwadratowy", "metr kwadratowy",
+                                                "kilometr kwadratowy", "ar", "stopa kwadratowa", " jard kwadratowy",
+                                                "akr"),
+                            wartość = c(x, x*1e+10, x*1e+8, x*10000, x*0.01, x*100, 
+                                        x*107639.104167097, x*11959.9004630108, x*2.47105381467165),
+                            jednostka = c( "ha", "mm^2", "cm^2", "m^2", "km^2", "a", "ft^2", "yd^2", "acre"))
   print.data.frame(powierzchnia)
 }
 
@@ -746,10 +761,10 @@ powierzchnia_ft2 = function(x){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
   } else
     powierzchnia=data.frame(nazwa_jednostki = c("stopa kwadratowa", "milimetr kwadrotowy", "centymetr kwadratowy", 
-                                                "metr kwadratowy", "kilometr kwadratowy", "ar", " jard kwadratowy", "akr"),
-                            wartość = c(x, x/92903, x/92903*100, x/92903*1000000, x/92903*1000000000000,
-                                        x/92903*100000000,  x/92903*836100,  x/92903*4046856422.4),
-                            jednostka = c( "ft^2", "mm^2", "cm^2", "m^2", "km^2", "a", "yd^2", "acre"))
+                                                "metr kwadratowy", "kilometr kwadratowy", "ar", "hektar", " jard kwadratowy", "akr"),
+                            wartość = c(x, x*92903.04, x*929.0304, x*0.09290304, x*9.290304e-8,
+                                        x*0.0009290304,  x*9.290304e-6,  x*0.1111111111111, 2.295684113866e-5),
+                            jednostka = c( "ft^2", "mm^2", "cm^2", "m^2", "km^2", "a", "ha", "yd^2", "acre"))
   print.data.frame(powierzchnia)
 }
 
@@ -760,10 +775,10 @@ powierzchnia_yd2 = function(x){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
   } else
     powierzchnia=data.frame(nazwa_jednostki = c("jard kwadratowy", "milimetr kwadrotowy", "centymetr kwadratowy",
-                                                "metr kwadratowy", "kilometr kwadratowy", "ar", "stopa kwadratowa", "akr"),
-                            wartość = c(x, x/836100, x/836100*100, x/836100*1000000, x/836100*1000000000000, x/836100*100000000,
-                                        x/836100*92903, x/836100*4046856422.4),
-                            jednostka = c( "yd^2", "mm^2", "cm^2", "m^2", "km^2", "a", "ft^2", "acre"))
+                                                "metr kwadratowy", "kilometr kwadratowy", "ar", "hektar", "stopa kwadratowa", "akr"),
+                            wartość = c(x, x*836127.36, x*8361.2736, x*0.83612736, x*8.3612736e-7, x*0.0083612736,
+                                        x*8.3612736e-5, x*9, x*0.00020661157025),
+                            jednostka = c( "yd^2", "mm^2", "cm^2", "m^2", "km^2", "a", "ha", "ft^2", "acre"))
   print.data.frame(powierzchnia)
 }
 
@@ -774,11 +789,11 @@ powierzchnia_acre = function(x){
     stop("Każdy z argumentów może przyjmować tylko jedną wartość.")
   } else
     powierzchnia=data.frame(nazwa_jednostki = c("akr","milimetr kwadrotowy", "centymetr kwadratowy", "metr kwadratowy",
-                                                "kilometr kwadratowy", "ar", "stopa kwadratowa", " jard kwadratowy" ),
-                            wartość = c(x, x*4046856422.4, x*4046856422.4*100, x*4046856422.4*1000000,
-                                        x*4046856422.4*1000000000000, x*4046856422.4*100000000,
-                                        x*4046856422.4*92903, x*4046856422.4*836100),
-                            jednostka = c( "acre", "mm^2", "cm^2", "m^2", "km^2", "a", "ft^2", "yd^2"))
+                                                "kilometr kwadratowy", "ar", "hekatr", "stopa kwadratowa", " jard kwadratowy" ),
+                            wartość = c(x, x*4046856422.4, x*40468564.224, x*4046.8564224,
+                                        x*0.0040468564224, x*40.468564224, x*0.40468564224,
+                                        x*43560, x*4840),
+                            jednostka = c( "acre", "mm^2", "cm^2", "m^2", "km^2", "a", "ha", "ft^2", "yd^2"))
   print.data.frame(powierzchnia)
 }
 
@@ -1191,3 +1206,4 @@ dlugosc_ly= function(x){
     print.data.frame(długość)
     
 }
+
