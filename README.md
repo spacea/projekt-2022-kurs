@@ -20,7 +20,7 @@ Do instalcji pakietu potrzebny jest pakiet `"devtools"`. Jeśli go nie mamy to m
 
 `library(devtools)` 
 
-Następnie wpisujemy `install_github("author/package_name")`, w miejsce `author` wpisujemy **autora pakietu**, a w miejsce `package_name` **nazwę pakietu**. Po zainstalowaniu pakietu wpisujemy `library(UnitConverter)`, i w ten sposób powinniśmy otrzymać dostęp do pakietu. Używanie pakietu jest bardzo proste, wpisujemy nazwę funkcji która nas interesuje np. `masa_mg`, po czym w nawiasie dopisujemy liczbę, tak że całość ma wyglądać tak: 
+Następnie wpisujemy `devtools::install_github("nazwa_uzytkownika_github/nazwa_pakietu")`. Po zainstalowaniu pakietu wpisujemy `library(UnitConverter)`, i w ten sposób powinniśmy otrzymać dostęp do pakietu. Używanie pakietu jest bardzo proste, wpisujemy nazwę funkcji która nas interesuje np. `masa_mg`, po czym w nawiasie dopisujemy liczbę, tak że całość ma wyglądać tak: 
 ```
 > masa_mg(44)
 [[1]]
