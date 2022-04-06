@@ -42,20 +42,6 @@ Następnie wpisujemy `devtools::install_github("nazwa_uzytkownika_github/nazwa_p
 Jeśli chcemy wyliczyć więcej niż jedną liczbę funckja ma wyglądać w ten sposób: 
 ```
 > masa_mg(c(44,84,13,21,37))
-   nazwa_jednostki      wartosc jednostka
-1         miligram 4.400000e+01        mg
-2             gram 4.400000e-02         g
-3         kilogram 4.400000e-05        kg
-4             tona 4.400000e-08         t
-5             gran 6.790238e-01        gr
-6            uncja 1.552054e-03        oz
-7             funt 9.700340e-05        lb
-8       tona (USA) 4.850170e-08    ton_us
-9        tona (UK) 4.330509e-08    ton_uk
-10           karat 2.200000e-01        ct
-11    masa atomowa 2.649742e+22         u
-
-> masa_mg(c(44,84,13,21,37))
 [[1]]
    nazwa_jednostki      wartosc jednostka
 1         miligram 4.400000e+01        mg
