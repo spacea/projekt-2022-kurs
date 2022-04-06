@@ -19,4 +19,3 @@ Funkcja sluzaca do konwersji cisnienia atmosferycznego na pozostale jednostki ci
 cisnienie_atm(20)
 cisnienie_atm(c(40, 95))
 }
-
