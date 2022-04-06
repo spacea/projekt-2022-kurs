@@ -131,6 +131,7 @@ Jeśli chcemy wyliczyć więcej niż jedną liczbę funckja ma wyglądać w ten 
 
 **Opcjonalnie** można zamienić notację naukową na liczbę używając na samym początku: `options("scipen"= 999)`. Wtedy całość będzie wyglądać tak:
 ```
+> masa_mg(44)
 [[1]]
    nazwa_jednostki                                wartosc jednostka
 1         miligram                      44.00000000000000        mg
