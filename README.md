@@ -24,7 +24,7 @@ Następnie wpisujemy install_github(".../..."), w miejsce ... wpisujemy autora i
 
 masa_mg(44) 
 
-Jeśli chcemy wyliczyć więcej niż jedną liczbę funckja ma wyglądać w ten sposób 
+Jeśli chcemy wyliczyć więcej niż jedną liczbę funckja ma wyglądać w ten sposób: 
 
 masa_mg(c(44,84,13,21,37)) 
 
