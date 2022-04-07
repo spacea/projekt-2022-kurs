@@ -1,9 +1,10 @@
-# Konwerter jednostek 
+# UnitConverter 
 **Autorzy: 
 Adrian Kurs, 
 Wojciech Żmidziński**
 
-# Rola
+# Rola 
+Konwerter jednostek
 
 Pakiet "UnitConverter" zawiera funkcje pozwalające na konwersje jednostek prędkości, objętości, masy, ciśnienia, powierzchni, temperatury i długości.
 
