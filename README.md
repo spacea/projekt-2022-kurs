@@ -40,7 +40,7 @@ Następnie wpisujemy `install_github("nazwa_uzytkownika_github/nazwa_pakietu")` 
 
 >
 ```
-Jeśli chcemy wyliczyć więcej niż jedną liczbę funckja ma wyglądać w ten sposób: 
+Jeśli chcemy wyliczyć więcej niż jedną liczbę funkcja ma wyglądać w ten sposób: 
 ```
 > masa_mg(c(44,84,13,21,37))
 [[1]]
